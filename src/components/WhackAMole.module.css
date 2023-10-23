@@ -1,0 +1,13 @@
+.hole{
+    background-image: url('/whackamole/wam_hole.png');
+    min-width: 169px;
+    min-height: 52px;
+}
+
+.mole {
+    background-image: url('/whackamole/wam_1.png');
+    background-repeat: no-repeat;
+    background-size: 170px 163px;
+    min-width: 169px;
+    min-height: 52px;
+}

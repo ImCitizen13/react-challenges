@@ -62,7 +62,7 @@ export default function WhackAMole() {
 
   return (
     <div className="flex flex-col flex-wrap items-center justify-center gap-8">
-      <h1 className="text-4xl">Score: {score}</h1>
+      <h1 className="text-4xl text-[#158e48]">Score: {score}</h1>
       <div className="grid min-h-[480px] min-w-[686px] grid-cols-3 gap-14 bg-[#a5d5b0] p-8">
         {holes.map((hole, index) => {
           return (

@@ -9,7 +9,7 @@
 
 body{
     margin: 0;
-    background-color:#202020;
+    background-color:#D7FBE8;
     width: 100%;
     min-height: 100vh;
     font-family: 'Bebas Neue', sans-serif;
@@ -23,7 +23,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color:#202020;
     color: white;
     /* background-image: url("/free-vector-black-keffiyeh-pattern.png"); */
 }
@@ -89,7 +88,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #292727;
+    background-color: #1FAB89;
     padding: 1rem;
     border-radius: 0.5rem;
 }

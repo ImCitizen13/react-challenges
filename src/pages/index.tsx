@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="mapView flex flex-wrap justify-center">
+      <div className="mapView flex flex-wrap justify-center bg-[#9DF3C4]">
         <div className="flex flex-wrap items-center gap-7">
           {/* <Link className="challenge" href={"/trafficlight"}><Image></Image><Traffic Light Challenge</Link>
           <Link className="challenge" href={"/challenge"}><Image></Image><City Capital Challenge</Link>*/}

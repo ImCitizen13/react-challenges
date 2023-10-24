@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./WhackAMole.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 type ImageType = "Hole" | "Mole";
 type ImageProps = {
@@ -14,15 +15,15 @@ function getImageProps(type: ImageType): ImageProps {
   if (type === "Hole") {
     return {
       src: "/whackamole/wam_hole.png",
-      width: 112,//169
-      height: 34,//52
+      width: 112, //169
+      height: 34, //52
       alt: type,
     };
   }
   return {
     src: `/whackamole/wam_${Math.floor(Math.random() * 2)}.png`,
-    width: 112,//170,
-    height: 34,//163,
+    width: 112, //170,
+    height: 34, //163,
     alt: type,
   };
 }
@@ -38,7 +39,6 @@ export default function WhackAMole() {
       return newMoles;
     });
   }
-
 
   const whackamole = (hole: string, index: number) => {
     if (hole === "Mole") {
@@ -66,10 +66,18 @@ export default function WhackAMole() {
       <div className="grid max-h-[380px] max-w-[586px] grid-cols-3 gap-6 bg-[#a5d5b0]">
         {holes.map((hole, index) => {
           return (
-              <Image key={`${index}`} onClick={() => whackamole(hole, index)} {...getImageProps(hole)} />
+            <Image
+              key={`${index}`}
+              onClick={() => whackamole(hole, index)}
+              {...getImageProps(hole)}
+            />
           );
         })}
       </div>
+      <footer className=" align-bottom pt-16 text-xl">
+       Especial thanks to <Link href="https://dribbble.com/Jung_Hanna" className="text-[#158e48]">Hanna Jung</Link>
+        where I got <Link href="https://dribbble.com/shots/1985081-Whack-a-mole-D" className="text-[#158e48]">these</Link> illustrations from 
+      </footer>
     </div>
   );
 }

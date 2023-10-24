@@ -7,10 +7,15 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Palestine illustrated</title>
+        {/* <title>Palestine illustrated</title>
         <meta
           name="description"
           content="This is a website that diplays historical information about palestine"
+        /> */}
+        <title>React Challenges</title>
+        <meta
+          name="description"
+          content="This site is dedicated to displaying react challenges solved by Mohamed Elabasiri"
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

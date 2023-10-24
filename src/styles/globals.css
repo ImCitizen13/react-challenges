@@ -27,6 +27,19 @@ body{
     /* background-image: url("/free-vector-black-keffiyeh-pattern.png"); */
 }
 
+.treeView{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #E7DFD5;
+    font-size: xx-large;
+    /* background-image: url("/free-vector-black-keffiyeh-pattern.png"); */
+}
+
 .arabMap {
     max-width: 420px;
     max-height: 850px;

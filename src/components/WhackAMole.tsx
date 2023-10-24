@@ -14,15 +14,15 @@ function getImageProps(type: ImageType): ImageProps {
   if (type === "Hole") {
     return {
       src: "/whackamole/wam_hole.png",
-      width: 169,
-      height: 52,
+      width: 112,//169
+      height: 34,//52
       alt: type,
     };
   }
   return {
     src: `/whackamole/wam_${Math.floor(Math.random() * 2)}.png`,
-    width: 170,
-    height: 163,
+    width: 112,//170,
+    height: 34,//163,
     alt: type,
   };
 }
@@ -62,8 +62,8 @@ export default function WhackAMole() {
 
   return (
     <div className="flex flex-col flex-wrap items-center justify-center gap-8">
-      <h1 className="text-4xl text-[#158e48]">Score: {score}</h1>
-      <div className="grid min-h-[480px] min-w-[686px] grid-cols-3 gap-14 bg-[#a5d5b0] p-8">
+      <h1 className="text-5xl text-[#158e48]">Score: {score}</h1>
+      <div className="grid min-h-[380px] min-w-[586px] grid-cols-3 gap-3 bg-[#a5d5b0] p-8">
         {holes.map((hole, index) => {
           return (
             <button key={`${index}`} onClick={() => whackamole(hole, index)}>

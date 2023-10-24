@@ -63,12 +63,10 @@ export default function WhackAMole() {
   return (
     <div className="flex flex-col flex-wrap items-center justify-center gap-8">
       <h1 className="text-5xl text-[#158e48]">Score: {score}</h1>
-      <div className="grid min-h-[380px] min-w-[586px] grid-cols-3 gap-3 bg-[#a5d5b0] p-8">
+      <div className="grid max-h-[380px] max-w-[586px] grid-cols-3 gap-6 bg-[#a5d5b0]">
         {holes.map((hole, index) => {
           return (
-            <button key={`${index}`} onClick={() => whackamole(hole, index)}>
-              <Image {...getImageProps(hole)} />
-            </button>
+              <Image key={`${index}`} onClick={() => whackamole(hole, index)} {...getImageProps(hole)} />
           );
         })}
       </div>

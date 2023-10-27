@@ -15,6 +15,19 @@ body{
     font-family: 'Bebas Neue', sans-serif;
     /* font-family: 'Montserrat', sans-serif; */
 }
+.challengesView{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: xx-large;
+    background: #f9f3ef;
+}
+
 .mapView{
     min-width: 100vw;
     min-height: 100vh;
@@ -26,6 +39,20 @@ body{
     color: white;
     /* background-image: url("/free-vector-black-keffiyeh-pattern.png"); */
 }
+
+.whackAMole{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* background-image: url("/free-vector-black-keffiyeh-pattern.png"); */
+}
+
+
 
 .treeView{
     min-width: 100vw;
@@ -96,17 +123,36 @@ body{
 }
 
 .challenge {
+    max-width: 400px;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    background-color: #1FAB89;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    background-color: #f9f3ef;
+    /* padding: 1rem; */
+    /* border-radius: 0.5rem; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
 }
 
-.challenge > h1 {
+.challenge a {
+    justify-content: center;
+}
+.challenge :hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.challenge img {
+    width: 350px;
+    height: 300px;
+}
+
+.challenge h1 {
     padding-top: 0.5rem;
     font-size:x-large;
+    color: #000000;
+    text-align: left;
+    border: #000000;
 }

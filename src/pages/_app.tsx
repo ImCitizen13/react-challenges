@@ -1,9 +1,12 @@
 import { type AppType } from "next/dist/shared/lib/utils";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { motion, AnimatePresence } from "framer-motion";
 
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -24,7 +27,13 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      
+      <AnimatePresence mode="wait">
+      <motion.div key={router.pathname}>
+        <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
+      
     </>
   );
 };

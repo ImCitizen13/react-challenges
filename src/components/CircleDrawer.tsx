@@ -55,7 +55,7 @@ export default function CircleDrawer() {
       >
         {circles.map((circle) => (
           <div
-            key={circle.top}
+            key={circle.top + circle.left + Math.random()}
             className={`${styles.circle}`}
             style={{ top: `${circle.top}px`, left: `${circle.left}px` }}
           ></div>

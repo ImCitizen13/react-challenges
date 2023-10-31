@@ -1,0 +1,26 @@
+.button {
+    background: #8c9e6e;
+    color: #ffffff;
+}
+
+.button :hover{
+    opacity: 0.5;
+}
+
+
+.checkoutCounter {
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+.checkout {
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+}
